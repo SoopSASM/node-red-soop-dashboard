@@ -1,4 +1,4 @@
-# @Soop/node-red-soop-dashboard
+# @soop-sasm/node-red-soop-dashboard
 
 [![platform](https://img.shields.io/badge/platform-Node--RED-red)](https://nodered.org)
 
