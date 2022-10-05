@@ -1,13 +1,9 @@
 {
-  "name": "node-red-contrib-samsung-automation-studio-nodes",
-  "version": "1.1.12",
-  "description": "Samsung Automation Studio Nodes for Node-RED",
+  "name": "@soop-sasm/node-red-soop-dashboard",
+  "version": "1.0.0",
+  "description": "Dashboard Nodes for Node-RED",
   "keywords": [
-    "SmartThings",
-    "Bixby",
-    "node-red",
-    "Samsung Automation Studio",
-    "AWS"
+    "node-red"
   ],
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
@@ -17,28 +13,22 @@
   "license": "Apache 2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Samsung/SamsungAutomationStudio"
+    "url": "https://github.com/SoopSASM/node-red-soop-dashboard"
   },
   "node-red": {
     "nodes": {
-      "SmartThings": "101-SmartThings.js",
-      "Bixby": "102-Bixby.js",
-      "Auth": "201-basicauth.js",
-      "AWS": "301-AWS.js",
-      "DB": "302-DB.js",
-      "SlackNotification": "303-SlackNotification.js",
       "soop_dashboard_config": "dashboard/nodes/soop_dashboard_config.js",
       "soop_tab": "dashboard/nodes/soop_tab.js",
       "soop_group": "dashboard/nodes/soop_group.js",
-      "soop_switch": "dashboard/nodes/soop_switch.js",
-      "soop_button": "dashboard/nodes/soop_button.js",
+      "soop_image": "dashboard/nodes/soop_image.js",
+      "soop_text": "dashboard/nodes/soop_text.js",
+      "soop_list": "dashboard/nodes/soop_list.js",
       "soop_chart": "dashboard/nodes/soop_chart.js",
       "soop_gauge": "dashboard/nodes/soop_gauge.js",
+      "soop_switch": "dashboard/nodes/soop_switch.js",
+      "soop_button": "dashboard/nodes/soop_button.js",
       "soop_slider": "dashboard/nodes/soop_slider.js",
       "soop_dropdown": "dashboard/nodes/soop_dropdown.js",
-      "soop_list": "dashboard/nodes/soop_list.js",
-      "soop_text": "dashboard/nodes/soop_text.js",
-      "soop_image": "dashboard/nodes/soop_image.js",
       "soop_data_format": "dashboard/nodes/soop_data_format.js"
     }
   },
