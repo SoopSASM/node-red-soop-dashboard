@@ -1,5 +1,6 @@
 module.exports = function (RED) {
   const dashboard = require("../dashboard")(RED);
+  const { SOOP_NODE_TYPE } = require("../common/common");
 
   function SoopChartNode(config) {
     const node = this;
@@ -13,7 +14,7 @@ module.exports = function (RED) {
         node.error("Payload is not a number.");
         return;
       }
-      dashboard.emitState(
+      dashboard.emitAndUpdateState(
         {
           nodeId: node.id,
           value: +msg.payload,
@@ -35,5 +36,5 @@ module.exports = function (RED) {
       done();
     });
   }
-  RED.nodes.registerType("soop_chart", SoopChartNode);
+  RED.nodes.registerType(SOOP_NODE_TYPE.CHART, SoopChartNode);
 };

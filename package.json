@@ -1,6 +1,6 @@
 {
   "name": "@soop-sasm/node-red-soop-dashboard",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Dashboard Nodes for Node-RED",
   "keywords": [
     "node-red"
